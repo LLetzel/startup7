@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://lletzel.github.io/startup7",
+  "description": "Um site para ajudar você a encontrar o seu próximo projeto de startup.",
+  "keywords": [
+    "startup",
+    "projeto",
+    "ideia",
+    "negócio",
+    "empreendedorismo"
+  ],
+  "license": "MIT",
+  "author": "Lucas Letzel",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
