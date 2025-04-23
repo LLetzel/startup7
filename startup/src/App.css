@@ -1,4 +1,4 @@
-/* App.css */
+/* Reset básico */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -7,11 +7,18 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Ajusta o scroll para evitar sobreposição da navbar fixa */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Container principal */
 .app {
   display: flex;
   flex-direction: column;
 }
 
+/* ============ HERO ============ */
 .hero {
   height: 100vh;
   background: linear-gradient(135deg, #1e3a8a, #0f172a);
@@ -52,7 +59,10 @@ body {
   background-color: #f3f4f6;
 }
 
-.sobre, .servicos, .contato {
+/* ============ SECTIONS ============ */
+.sobre,
+.servicos,
+.contato {
   padding: 5rem 1.5rem;
   text-align: center;
 }
@@ -70,13 +80,13 @@ body {
   font-size: 1rem;
 }
 
+/* ============ CARDS ============ */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 2rem;
+  margin: 2rem auto 0 auto;
 }
 
 .card {
@@ -101,6 +111,7 @@ body {
   color: #94a3b8;
 }
 
+/* ============ WHATSAPP BUTTON ============ */
 .whatsapp-button {
   background-color: #ffffff;
   color: #1e3a8a;
@@ -118,19 +129,10 @@ body {
   transform: scale(1.05);
 }
 
+/* ============ FOOTER ============ */
 .footer {
   padding: 1rem;
   text-align: center;
   background-color: #0f172a;
   color: #94a3b8;
-}
-
-
-body {
-  font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
-}
-
-section {
-  scroll-margin-top: 80px;
 }
