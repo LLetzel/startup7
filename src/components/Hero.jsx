@@ -1,6 +1,8 @@
 const Hero = () => (
     <section id="hero" className="hero pt-20">
-      <p className="hero-subtitle" data-aos="fade-up">
+
+      <div className="container-hero1">
+        <p className="hero-subtitle" data-aos="fade-up">
         Transformamos ideias em sistemas de entrega modernos, eficientes e personalizados.
       </p>
       <a
@@ -9,7 +11,11 @@ const Hero = () => (
         data-aos="zoom-in"
       >
         Quero minha solução agora
-      </a>
+      </a></div>
+      
+      <div className="logoplus">
+        <img src="src/assets/NewDev.png" alt="" />
+      </div>
     </section>
   );
   
