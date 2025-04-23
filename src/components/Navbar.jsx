@@ -1,27 +1,21 @@
 import React from "react";
-import { FaHome, FaInfoCircle, FaCogs, FaEnvelope, FaLaptopCode } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <header>
-      <div className="header">
-      <nav className="header-content">
-        <div className="header-logo">
-          <h1>NewDev</h1>
-          </div>
-        <ul>
-          <i className="link"> Home</i>
-          <i className="link"> About</i>
-          <i className="link"> Services</i>
-          <i className="link"> Contact</i>
-          <i className="link"> Projects</i>
-        </ul>
-        
-      </nav>
+    <header className="header">
+      <div className="header-logo">
+        <img src="/src/assets/logoNewDev.png" alt="" width="80px" />
       </div>
-      <div className="divisoria"></div>
+      <nav>
+        <ul className="nav-links">
+          <li className="link">Home</li>
+          <li className="link">About</li>
+          <li className="link">Services</li>
+          <li className="link">Contact</li>
+          <li className="link">Projects</li>
+        </ul>
+      </nav>
     </header>
-    
   );
 };
 
