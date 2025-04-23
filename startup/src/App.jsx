@@ -17,14 +17,16 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <Navbar />
-      <Hero />
-      <Sobre />
-      <Servicos />
-      <Portfolio />
-      <Contato />
-      <Footer />
+    <div class="fullscreen-container">
+      <div className="app">
+        <Navbar />
+        <Hero />
+        <Sobre />
+        <Servicos />
+        <Portfolio />
+        <Contato />
+        <Footer />
+      </div>
     </div>
   );
 }
