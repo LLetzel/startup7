@@ -13,7 +13,7 @@
     "empreendedorismo"
   ],
   "license": "MIT",
-  "author": "Lucas Letzel",
+  "author": "Lucas Letzel, Felipe Loncarovich",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

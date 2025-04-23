@@ -4,20 +4,24 @@ import { FaHome, FaInfoCircle, FaCogs, FaEnvelope, FaLaptopCode } from "react-ic
 const Navbar = () => {
   return (
     <header>
+      <div className="header">
       <nav className="header-content">
         <div className="header-logo">
           <h1>NewDev</h1>
           </div>
         <ul>
-          <li className="link"><FaHome /> Home</li>
-          <li className="link"><FaInfoCircle /> About</li>
-          <li className="link"><FaCogs /> Services</li>
-          <li className="link"><FaEnvelope /> Contact</li>
-          <li className="link"><FaLaptopCode /> Projects</li>
+          <i className="link"> Home</i>
+          <i className="link"> About</i>
+          <i className="link"> Services</i>
+          <i className="link"> Contact</i>
+          <i className="link"> Projects</i>
         </ul>
         
       </nav>
+      </div>
+      <div className="divisoria"></div>
     </header>
+    
   );
 };
 
