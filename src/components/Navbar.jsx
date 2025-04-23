@@ -2,9 +2,10 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className="header">
+    <header>
+      <div className="header">
       <div className="header-logo">
-        <img src="/src/assets/logoNewDev.png" alt="" width="80px" />
+        <img src="/src/assets/logoNewDev.png" alt="" width="140px" />
       </div>
       <nav>
         <ul className="nav-links">
@@ -15,6 +16,8 @@ const Navbar = () => {
           <li className="link">Projects</li>
         </ul>
       </nav>
+      </div>
+      <div className="divisoria"></div>
     </header>
   );
 };
