@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="header-wrapper">
       <div className="header">
         <div className="header-logo">
-          <img src="/src/assets/logo5.png" alt="" width="77 px" />
+          <img src="/src/assets/logo-simple.png" alt="" width="105px" />
         </div>
         <nav>
           <ul className="nav-links">
