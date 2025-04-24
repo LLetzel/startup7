@@ -11,7 +11,8 @@ const Hero = () => (
         data-aos="zoom-in"
       >
         Quero minha solução agora
-      </a></div>
+      </a>
+      </div>
       
       <div className="logoplus">
         <img src="src/assets/NewDev.png" alt="" />

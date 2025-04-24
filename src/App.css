@@ -2,11 +2,38 @@
 
 :root {
   --primary-color: #1f1f22;
-  --background: #0c0c0e;
+  --background: #000;
   --secondary-color: #6e30ff;
-  --terciary-color: #85e6c0;
-  --quaternary-color: #daf3ea;
-  --text-color: #f7f4e8;
+  --terciary-color: #817f96;
+  --quaternary-color: #c3b5ce;
+  --text-color: #fff;
+}
+
+.section-tag-container {
+  width: 80%;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 11px;
+  line-height: 1em;
+  display: flex;
+  background-color: #121212;
+;
+}
+
+.section-tag-line {
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+  flex: 1;
+  margin-left: 20px;
+}
+
+.linha{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  background: #121212;
 }
 
 body {
@@ -56,6 +83,8 @@ header{
   margin: 0 auto;
   width: 80%;
   gap: 30vw;
+  padding: 5px;
+  padding-top: 20px;
 }
 
 
@@ -97,6 +126,7 @@ header{
 
 /* ================= HERO ================= */
 .hero {
+  padding: 7rem 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,20 +136,22 @@ header{
 }
 
 .hero-button {
-  background-color: var(--secondary-color);
-  color: var(--background);
-  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, var(--secondary-color), var(--quaternary-color));
+  color: #000;
+  padding: 1rem 2.5rem;
   border-radius: 9999px;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 2px solid var(--secondary-color); /* Borda da mesma cor */
+  outline: none;
+  cursor: pointer;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 20px rgba(107, 179, 155, 0.3);
+  transition: all 0.5s ease; /* Mantém só a transição da escala */
 }
 
-.hero-button:hover {
-  transform: scale(1.05);
-  background-color: var(--terciary-color);
-  color: black;
+.hero-button:hover {  
+  font-size: 1.11rem;
+  color: #000;
 }
 
 /* HERO MODERNO E PROFISSIONAL */
@@ -187,28 +219,7 @@ header{
   animation: fadeInUp 1.6s cubic-bezier(.23,1.01,.32,1) both;
 }
 
-.hero-button {
-  background: linear-gradient(90deg, var(--secondary-color), var(--terciary-color));
-  color: var(--primary-color);
-  padding: 1rem 2.5rem;
-  border-radius: 9999px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  box-shadow: 0 10px 32px 0 rgba(107, 179, 155, 0.25), 0 2px 8px #000;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-  animation: fadeInUp 2s cubic-bezier(.23,1.01,.32,1) both;
-}
 
-.hero-button:hover, .hero-button:focus {
-  transform: scale(1.07);
-  background: linear-gradient(90deg, var(--terciary-color), var(--secondary-color));
-  box-shadow: 0 16px 40px 0 var(--terciary-color), 0 2px 8px #000;
-  color: #000;
-}
 
 @keyframes fadeInUp {
   from {
@@ -222,9 +233,15 @@ header{
 }
 
 /* ================= SECTIONS ================= */
-.sobre,
+.sobre {
+  padding: 7rem 1.5rem;
+  text-align: center;
+  background-color: #121212;
+  position: relative;
+  overflow: visible;
+}
+
 .servicos {
-  padding: 5rem 1.5rem;
   text-align: center;
   background-color: #121212;
 }
@@ -233,19 +250,77 @@ header{
   background: linear-gradient(to bottom, #121212, #000000);
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--quaternary-color);
-  margin-bottom: 1.5rem;
+.section-sobre {
+  background: radial-gradient(ellipse at top, #121212 60%, transparent 100%),
+              radial-gradient(ellipse at bottom, #1f1f22 20%, transparent 80%);
+  padding: 8rem 2rem;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
 }
 
-.section-text {
-  color: var(--terciary-color);
-  max-width: 700px;
+.sobre-conteudo {
+  max-width: 800px;
   margin: 0 auto;
-  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  animation: fadeInUp 1.2s ease-out both;
 }
+
+.sobre-decoracao {
+  width: 80px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin: 1rem auto 2rem auto;
+  border-radius: 9999px;
+  animation: pulseDecor 2s ease-in-out infinite alternate;
+}
+
+.section-text.destaque {
+  font-size: 1.25rem;
+  color: var(--quaternary-color);
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid rgb(110, 48, 255);
+  border-bottom: 3px solid rgb(110, 48, 255);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 16px rgba(110, 48, 255, 0.25);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+  line-height: 2;
+  animation: pulseRoxo 2.5s ease-in-out infinite;
+}
+
+
+@keyframes pulseRoxo {
+  0% {
+    box-shadow: 0 0 16px rgba(110, 48, 255, 0.25);
+    border-left-color: rgb(110, 48, 255);
+    border-bottom-color: rgb(110, 48, 255);
+  }
+  25% {
+    box-shadow: 0 0 20px rgba(170, 0, 255, 0.4);
+    border-left-color: rgb(170, 0, 255);
+    border-bottom-color: rgb(170, 0, 255);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(200, 0, 255, 0.5);
+    border-left-color: rgb(200, 0, 255);
+    border-bottom-color: rgb(200, 0, 255);
+  }
+  75% {
+    box-shadow: 0 0 20px rgba(170, 0, 255, 0.4);
+    border-left-color: rgb(170, 0, 255);
+    border-bottom-color: rgb(170, 0, 255);
+  }
+  100% {
+    box-shadow: 0 0 16px rgba(110, 48, 255, 0.25);
+    border-left-color: rgb(110, 48, 255);
+    border-bottom-color: rgb(110, 48, 255);
+  }
+}
+
 
 /* ================= CARDS ================= */
 .cards-container {
@@ -411,7 +486,6 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   color: #FFF;
   text-align: center;
   font-size: 18px;
@@ -420,6 +494,7 @@ span {
   line-height: normal;
   animation: fadeIn 1s ease-out;
   background-color: #121212;
+  padding: 7rem 1.5rem;
 }
 
 .servicos {

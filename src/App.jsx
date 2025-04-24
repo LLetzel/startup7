@@ -16,15 +16,40 @@ function App() {
   }, []);
 
   return (
-    <div class="fullscreen-container">
+    <div className="fullscreen-container">
       <div className="app">
         <Navbar />
         <Hero />
+        <div className="linha">
+          <div className="section-tag-container">
+            <div>Sobre Nós</div>
+            <div className="section-tag-line"></div>
+          </div>
+        </div>
         <Sobre />
+        <div className="linha">
+          <div className="section-tag-container">
+            <div>Nossos Serviços</div>
+            <div className="section-tag-line"></div>
+          </div>
+        </div>
         <Servicos />
+        <div className="linha">
+          <div className="section-tag-container">
+            <div>Portifólio</div>
+            <div className="section-tag-line"></div>
+          </div>
+        </div>
         <Portfolio />
+        <div className="linha">
+          <div className="section-tag-container">
+            <div>Contato</div>
+            <div className="section-tag-line"></div>
+          </div>
+        </div>
         <Contato />
         <Footer />
+
       </div>
     </div>
   );
