@@ -1,7 +1,7 @@
 const Footer = () => (
   <footer className="footer-container">
     <div className="footer-bg"></div>
-    <div className="footer-divider"></div>
+    <div className="footer-divider-roxo"></div>
     <div className="footer-content">
       <div className="footer-top">
         <div className="footer-brand">

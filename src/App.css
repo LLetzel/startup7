@@ -362,7 +362,7 @@ span {
   padding: 0.2rem;
 }
 
- .footer-divider {
+ .footer-divider-roxo {
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg,var(--secondary-color) 100%);
