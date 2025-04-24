@@ -225,7 +225,11 @@ header{
 
 /* ================= SECTIONS ================= */
 .sobre,
+<<<<<<< HEAD
 .servicos {
+=======
+.contato {
+>>>>>>> b2c8b085042e3ec6e956efce557672a63259aab8
   padding: 5rem 1.5rem;
   text-align: center;
   background-color: #121212;
