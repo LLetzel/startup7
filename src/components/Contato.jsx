@@ -16,5 +16,5 @@ const Contato = () => (
     </section>
   );
   
-  export default Contato;
+export default Contato;
   

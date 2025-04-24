@@ -1,12 +1,20 @@
 const Footer = () => (
-    <footer className="footer">
-
-      <div className="social-media">
-<a href="www.linkedin.com/in/lucasletzel" target="_blank">Linkedin: Lucas Letzel</a> | <a href="https://instagram.com" target="_blank">lucasletzel_</a>
+  <footer className="footer-container">
+    <div className="footer-bg"></div>
+    <div className="footer-divider"></div>
+    <div className="footer-content">
+      <div className="footer-top">
+        <div className="footer-brand">
+          <img src="/src/assets/NewDev.png" alt="NewDev Logo" width="120" />
+        </div>
       </div>
-      © {new Date().getFullYear()} NewDev. Todos os direitos reservados.
-    </footer>
-  );
-  
-  export default Footer;
-  
+      <div className="footer-bottom">
+        <span>
+          © {new Date().getFullYear()} NewDev. Todos os direitos reservados.
+        </span>
+      </div>
+    </div>
+  </footer>
+);
+
+export default Footer;
