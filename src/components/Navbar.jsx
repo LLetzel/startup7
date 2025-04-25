@@ -27,7 +27,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.3 }
     );
 
     sectionElements.forEach((section) => observer.observe(section));
@@ -44,7 +44,7 @@ const Navbar = () => {
             scrollToSection("hero");
           }}
         >
-          <img src={ImagemNavBar} alt="Logo" width="75px" />
+          <img src={ImagemNavBar} id="logoNavBar" alt="Logo" width="75px" />
         </div>
 
         <nav className={`nav-links-wrapper ${menuOpen ? "open" : ""}`}>
