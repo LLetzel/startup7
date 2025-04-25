@@ -99,38 +99,20 @@ section {
 /* ================= HEADER ================= */
 .header-wrapper {
   background-color: #000;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  color: white;
+  position: fixed;
   width: 100%;
-}
-
-
-header {
-  position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .header {
-  color: var(--text-color);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  width: 80%;
-  gap: 30vw;
-  padding: 5px;
-  padding-top: 20px;
-}
-
-
-.header-logo {
-  margin: 0;
-  color: var(--secondary-color);
-  cursor: pointer;
 }
 
 .nav-links {
@@ -167,26 +149,13 @@ header {
   width: 100%;
 }
 
-
-.header-wrapper {
-  background-color: #000;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-}
-
-.header {
+.nav-links-wrapper {
   display: flex;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  color: var(--text-color);
 }
 
-.header-logo {
-  cursor: pointer;
+.link:hover,
+.link.active {
+  color: var(--secondary-color);
 }
 
 .menu-toggle {
@@ -222,80 +191,6 @@ header {
 
 .menu-toggle.active i {
   transform: rotate(180deg);
-}
-
-
-.nav-links-wrapper {
-  display: flex;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.link {
-  position: relative;
-  cursor: pointer;
-  padding-bottom: 4px;
-  transition: color 0.3s;
-}
-
-.link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: var(--secondary-color);
-  transition: width 0.3s ease;
-}
-
-.link:hover::after,
-.link.active::after {
-  width: 100%;
-}
-
-.header-wrapper {
-  background-color: #000;
-  color: white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.nav-links-wrapper {
-  display: flex;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.link {
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.link:hover,
-.link.active {
-  color: var(--secondary-color);
 }
 
 .menu-toggle {
@@ -835,6 +730,8 @@ span {
   justify-content: center;
   gap: 80px;
   color: #828282;
+  text-align: center;
+  background-color: #121212;
 }
 
 .servico {
