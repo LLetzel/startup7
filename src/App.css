@@ -103,6 +103,7 @@ header {
 .header-logo {
   margin: 0;
   color: var(--secondary-color);
+  cursor: pointer;
 }
 
 .nav-links {
@@ -389,7 +390,8 @@ header {
 }
 
 .projetos-cards {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* Ajuste para responsividade */

@@ -1,3 +1,5 @@
+import newDevSemEscrito from '../assets/NewDev-sem-escrita.png';
+
 const Footer = () => (
   <footer className="footer-container">
     <div className="footer-bg"></div>
@@ -5,7 +7,7 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-top">
         <div className="footer-brand">
-          <img src="/src/assets/NewDev-sem-escrita.png" alt="NewDev Logo" width="130" />
+          <img src={newDevSemEscrito} alt="NewDev Logo" width="130" />
         </div>
       </div>
       <div className="footer-bottom">
