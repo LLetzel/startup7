@@ -6,9 +6,9 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Sobre from './components/Sobre';
 import Servicos from './components/Servicos';
-import Portfolio from './components/Portfolio';
-import Contato from './components/Contato';
+import Contat from './components/Contat';
 import Footer from './components/Footer';
+import Projetos from './components/Projetos';
 
 function App() {
   useEffect(() => {
@@ -36,18 +36,18 @@ function App() {
         <Servicos />
         <div className="linha">
           <div className="section-tag-container">
-            <div>Portifólio</div>
+            <div>Alguns Projetos</div>
             <div className="section-tag-line"></div>
           </div>
         </div>
-        <Portfolio />
+        <Projetos />
         <div className="linha">
           <div className="section-tag-container">
             <div>Contato</div>
             <div className="section-tag-line"></div>
           </div>
         </div>
-        <Contato />
+        <Contat />
         <Footer />
 
       </div>
