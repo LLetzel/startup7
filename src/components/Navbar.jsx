@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ImagemNavBar from "../assets/logo-simple.png";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -46,7 +47,7 @@ const Navbar = () => {
           setActiveSection("");
           scrollToSection("hero");
         }}>
-          <img src="/src/assets/logo-simple.png" alt="" width="75px" />
+          <img src={ImagemNavBar} alt="" width="75px" />
         </div>
         <nav>
           <ul className="nav-links">

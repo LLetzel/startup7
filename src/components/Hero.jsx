@@ -1,3 +1,5 @@
+import logoNewDev from '../assets/NewDev.png';
+
 const Hero = () => (
     <section id="hero" className="hero pt-20">
 
@@ -15,7 +17,7 @@ const Hero = () => (
       </div>
       
       <div className="logoplus">
-        <img src="src/assets/NewDev.png" alt="" />
+        <img src={logoNewDev} alt="" />
       </div>
     </section>
   );
