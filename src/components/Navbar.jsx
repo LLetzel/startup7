@@ -24,7 +24,7 @@ const Navbar = () => {
           });
         },
         {
-          threshold: 0.2, // em vez de 0.5
+          threshold: 0.4, // em vez de 0.5
         }
       );
   
