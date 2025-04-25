@@ -49,6 +49,11 @@ function App() {
           </div>
         </div>
         <Contat />
+        <div className="linha-roxo">
+          <div className="section-tag-container-roxo">
+            <div className="section-tag-line-roxo"></div>
+          </div>
+        </div>
         <Footer />
 
       </div>

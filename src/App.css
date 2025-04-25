@@ -47,6 +47,33 @@ h2 {
   background: #121212;
 }
 
+.section-tag-container-roxo {
+  width: 100%;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 11px;
+  line-height: 1em;
+  display: flex;
+  background-color: #121212;
+  ;
+}
+
+.section-tag-line-roxo {
+  height: 1px;
+  background: var(--secondary-color);
+  flex: 1;
+  margin-left: 20px;
+}
+
+.linha-roxo {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  background: #121212;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
