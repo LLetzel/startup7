@@ -214,6 +214,7 @@ header {
 
 .menu-toggle.active {
   outline: none;
+  background-color: var(--secondary-color);
 }
 
 .menu-toggle i {
