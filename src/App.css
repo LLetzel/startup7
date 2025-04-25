@@ -834,3 +834,171 @@ span {
   margin: 0.5rem 0 0 0;
   line-height: 1.4;
 }
+
+/* ================= RESPONSIVIDADE GERAL ================= */
+
+/* Hero Section */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+  .logoplus img {
+    max-width: 80vw;
+    height: auto;
+  }
+}
+
+/* Hero Section - Mobile */
+@media (max-width: 600px) {
+  .hero {
+    padding: 2.5rem 0.5rem;
+  }
+  .container-hero1 {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .hero-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+  .logoplus img {
+    width: 90vw;
+    max-width: 320px;
+  }
+}
+
+/* Sobre Section */
+@media (max-width: 900px) {
+  .section-sobre {
+    padding: 4rem 1rem;
+  }
+  .sobre-conteudo {
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .section-sobre {
+    padding: 2.5rem 0.5rem;
+  }
+  .section-text.destaque {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Serviços Section */
+@media (max-width: 900px) {
+  .servicos {
+    gap: 32px;
+  }
+  .section-servicos {
+    padding: 4rem 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .servicos {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+  }
+  .servico {
+    width: 90%;
+    max-width: 350px;
+    min-width: unset;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .section-servicos {
+    align-items: center;
+  }
+}
+
+/* Projetos Section */
+@media (max-width: 900px) {
+  .section-projetos {
+    padding: 4rem 1rem;
+  }
+  .projetos-cards {
+    gap: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .projetos-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .projetos-card {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 500px) {
+  .section-projetos {
+    padding: 2rem 0.2rem;
+  }
+  .projetos-card-title {
+    font-size: 1.1rem;
+  }
+  .projetos-description {
+    font-size: 1rem;
+  }
+}
+
+/* Contato Section */
+@media (max-width: 900px) {
+  .contat-section {
+    padding: 4rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .contat-section {
+    padding: 2rem 0.5rem;
+  }
+  .contat-title {
+    font-size: 1.3rem;
+  }
+  .contat-description {
+    font-size: 1rem;
+  }
+  .contat-whatsapp-button {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* Footer */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+  }
+  .footer-brand img {
+    width: 120px;
+  }
+}
+@media (max-width: 600px) {
+
+  .footer-content {
+    padding: 1rem 0.2rem;
+  }
+  .footer-brand img {
+    width: 120px;
+  }
+  .footer-bottom span {
+    font-size: 0.9rem;
+  }
+}
