@@ -9,6 +9,7 @@ import Servicos from './components/Servicos';
 import Contat from './components/Contat';
 import Footer from './components/Footer';
 import Projetos from './components/Projetos';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   useEffect(() => {
