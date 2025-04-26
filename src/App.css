@@ -508,57 +508,117 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* Ajuste para responsividade */
   justify-content: center;
   align-items: stretch;
 }
 
 .projetos-card {
   background: linear-gradient(145deg, #1a1a1a, #212121);
-  /* Gradiente sutil */
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  /* Sombra mais suave */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 340px;
+  min-width: 280px;
+  max-width: 340px;
+  min-height: 420px;
+  max-height: 420px;
+  overflow: hidden;
+  position: relative;
 }
 
 .projetos-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-  /* Sombra ao passar o mouse */
+}
+
+.projetos-image-wrapper {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+  background: #18181c;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
 }
 
 .projetos-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  display: block;
   border: 2px solid var(--secondary-color);
-  /* Borda de destaque */
+  transition: filter 0.3s;
+}
+
+.projetos-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 20, 60, 0.72);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.projetos-card:hover .projetos-overlay {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .projetos-card-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--quaternary-color);
-  /* Cor de destaque */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .projetos-card-text {
   font-size: 1rem;
   color: var(--terciary-color);
-  /* Cor secundária */
-  line-height: 1.6;
+  line-height: 1.5;
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-bottom: 0;
 }
 
+/* Responsividade */
+@media (max-width: 700px) {
+  .projetos-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .projetos-card {
+    width: 95vw;
+    max-width: 340px;
+    min-width: unset;
+  }
+}
 
 /* Contat */
 .contat-section {
