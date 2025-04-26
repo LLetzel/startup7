@@ -1,7 +1,7 @@
 import logoNewDev from '../assets/NewDev.png';
 
 const Hero = () => (
-    <section id="hero" className="hero pt-20">
+    <section id="hero" className="hero pt-20" >
 
       <div className="container-hero1">
         <p className="hero-subtitle" data-aos="fade-up">

@@ -13,7 +13,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (

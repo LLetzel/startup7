@@ -5,7 +5,7 @@ const projetos = [
   ];
   
   const Projetos = () => (
-    <section id="projetos" className="section-projetos">
+    <section id="projetos" className="section-projetos" >
       <h2>Projetos</h2>
       <p className="projetos-description">
         Explore alguns dos projetos que destacam nossa criatividade e experiência técnica.

@@ -1,5 +1,5 @@
 const Contat = () => (
-    <section id="contat" className="contat-section">
+    <section id="contat" className="contat-section" >
       <h2 className="contat-title">Entre em Contato</h2>
       <p className="contat-description">
         Precisa de ajuda ou quer discutir um projeto? Estou aqui para ajudar! Entre em contato agora mesmo.

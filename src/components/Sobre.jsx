@@ -1,6 +1,6 @@
 const Sobre = () => {
   return (
-    <section className="section-sobre" id="sobre">
+    <section className="section-sobre" id="sobre"  >
       <div className="sobre-conteudo">
         <h2>Quem somos?</h2>
         <p className="section-text destaque">

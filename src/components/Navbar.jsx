@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ImagemNavBar from "../assets/logo-simple.png";
+import ImagemNavBar from "../assets/logoIA.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
             scrollToSection("hero");
           }}
         >
-          <img src={ImagemNavBar} id="logoNavBar" alt="Logo" width="75px" />
+          <img src={ImagemNavBar} id="logoNavBar" alt="Logo" width="65px" />
         </div>
 
         <nav className={`nav-links-wrapper ${menuOpen ? "open" : ""}`}>
