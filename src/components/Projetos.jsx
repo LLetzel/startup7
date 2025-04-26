@@ -1,3 +1,5 @@
+import climaweb from "../assets/climaweb.png";
+
 const projetos = [
   {
     id: 1,
@@ -5,8 +7,7 @@ const projetos = [
     descricao:
       "Clima Web é um projeto web responsivo e dinâmico que oferece informações meteorológicas precisas e em tempo real, diretamente no seu navegador. Desenvolvido com foco na experiência do usuário, o Clima Web combina uma interface intuitiva e elegante com dados confiáveis de previsão do tempo.",
     link: "https://climaweb.vercel.app/",
-    // imagem: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fclimaweb.vercel.app%2F?w=600"
-    imagem: "src/assets/climaweb.png",
+    imagem: climaweb,
   },
   { id: 2, nome: "Projeto 2", descricao: "Descrição do Projeto 2", imagem: "https://via.placeholder.com/600x300?text=Projeto+2" },
   { id: 3, nome: "Projeto 3", descricao: "Descrição do Projeto 3", imagem: "https://via.placeholder.com/600x300?text=Projeto+3" },
